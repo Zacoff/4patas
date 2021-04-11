@@ -31,6 +31,7 @@ header{
 .logo img{
     width:100%;
 }
+/* LOGO */
 /* MENU */
 header .menu-desktop{
     float: right;
@@ -62,7 +63,8 @@ header .menu-mobile{
 header .menu-mobile ul{
     display:none;
 }
-/* ICONES */
+/* MENU */
+/* ICONS */
 .icons{
     width: 50px;
     float: right;
@@ -78,34 +80,114 @@ header .menu-mobile ul{
 .icons svg:hover{
     color: #F38A3C;
 }
-/* main */
-main{
+/* ICONS */
+/* SECTION 1 */
+main .section-1{
     width:100%;
     height:auto;
     display: flex;
     justify-content: space-around;
     margin: 0 auto;
 }
-main .container-info{
-    width: 33.33%;
+main .section-1 .container-info{
+    width: 50%;
     height: 200px;
     margin: 20px 10px;
     padding: 10px;
     text-align: center;
     border-right: 2px solid white;
 }
-main .container-info h1{
+main .section-1 .container-info:last-of-type{
+    border-right: none;
+}
+main .section-1 .container-info svg{
+    width:100px;
+}
+main .section-1 .container-info h1{
     font-size: 15px;
 }
+/* SECTION 1 */
+/* SECTION 2 */
+main .section-2{
+    width:95%;
+    margin: 0 auto;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px;
+}
+main .section-2 h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+main .section-2 p{
+    text-align: justify;
+    font-size: 25px;
+}
+/* SECTION 2 */
+/* CONTACT */
+main .contact{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+main .contact h1{
+    width:100%;
+    text-align: center;
+    margin: 30px;
+}
+main .contact-info{
+    text-align:justify;
+    margin: 30px;
+}
+main .contact-info svg{
+    margin-right: 10px;
+}
+main .contact-info svg:last-of-type{
+    text-align:center;
+}
+main iframe{
+    width: 600px;
+    outline: 4px solid white;
+}
+/* CONTACT */
+/* SPONSOR */
+main .sponsor{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto;
+    border-top: 1px solid white;
+    padding: 10px;
+}
+main .sponsor h1{
+    width:100%;
+    text-align: center;
+    margin: 10px;
+}
+main .sponsor img{
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px;
+    height: 100px;
+}
+/* SPONSOR */
 @media screen and (max-width:700px){
-    main{
+    main .section-1{
         flex-direction: column;
         padding: 10px;
     }
-    main .container-info{
+    main .section-1 .container-info{
         width:100%;
         height: auto;
         margin: 20px 0;
+        border-right: 2px solid white;
+        border-left: 2px solid white;
+    }
+    main .section-1 .container-info:last-of-type{
+        border-right: 1px solid white;
     }
 }
 @media screen and (max-width:500px) {
